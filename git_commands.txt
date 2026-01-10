@@ -1,0 +1,47 @@
+create a new repository on the command line
+---------------------------------------------------------------
+echo "# utilities" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:subbuklce/utilities.git
+git push -u origin main
+
+push an existing repository from the command line
+----------------------------------------------------------------
+git remote add origin git@github.com:subbuklce/utilities.git
+git branch -M main
+git push -u origin main
+
+
+Adding origin and upstream branches
+-----------------------------------------------------------------
+before adding upstream, the ouput looks like this
+git remote -v
+origin  https://github.com/ed-donner/agents.git (fetch)
+origin  https://github.com/ed-donner/agents.git (push)
+
+Add a new remote called upstream
+git remote rename origin upstream  - renaming origin to upstream
+git remote add origin https://github.com/<your‑username>/agents.git  - your forked branch
+git remote -v        # verify
+
+origin    https://github.com/<your‑username>/agents.git (fetch)
+origin    https://github.com/<your‑username>/agents.git (push)
+upstream  https://github.com/ed-donner/agents.git (fetch)
+upstream  https://github.com/ed-donner/agents.git (push)
+
+
+Creating a new PR on your forked branch to create a new set of code changes
+---------------------------------------------------------------------------
+
+Keeping forked main upto date with origin repo (ed_donner branch)
+--------------------------------------------------------------------
+git checkout main
+git pull upstream main      # bring your local main up‑to‑date
+git push origin main        # update your fork’s main
+
+If you want to rebase your local branch with remote 
+-------------------------------------------------------------------------------
+git pull --rebase origin alice/lab1-solution then push.
