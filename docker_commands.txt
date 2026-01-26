@@ -1,0 +1,24 @@
+// This tutorial explains the shortcuts or brief introduction to the use of docker utilities
+// feel free to use and update
+
+example 1:
+--rm = remove after use
+python:3.9 = docker image name
+docker run --rm python:3.9 python -c "print 2+2"
+
+| Command                            | Description                                  |                                                                              |
+| ---------------------------------- | -------------------------------------------- | ---------------------------------------------------------------------------- |
+| `docker run`                       | Runs a command in a new container            |                                                                              |
+| `docker ps`                        | Lists running containers                     |                                                                              |
+| `docker ps -a`                     | Lists all containers (running and stopped)   |                                                                              |
+| `docker images`                    | Lists all Docker images on the system        |                                                                              |
+| `docker pull <image>`              | Downloads an image from Docker Hub           |                                                                              |
+| `docker build -t <name> .`         | Builds an image from a Dockerfile            |                                                                              |
+| `docker exec -it <container> bash` | Starts a bash session in a running container |                                                                              |
+| `docker stop <container>`          | Stops a running container                    |                                                                              |
+| `docker rm <container>`            | Removes a stopped container                  |                                                                              |
+| `docker rmi <image>`               | Removes a Docker image                       | ([Docker Documentation][1], [Microsoft Learn][2], [Docker Documentation][3]) |
+
+[1]: https://docs.docker.com/engine/containers/run/?utm_source=chatgpt.com "Running containers - Docker Docs"
+[2]: https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/containers-vs-vm?utm_source=chatgpt.com "Containers vs. virtual machines | Microsoft Learn"
+[3]: https://docs.docker.com/reference/cli/docker/container/ls/?utm_source=chatgpt.com "docker container ls"
