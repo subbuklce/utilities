@@ -41,6 +41,8 @@ Keeping forked main upto date with origin repo (ed_donner branch)
 git checkout main
 git pull upstream main      # bring your local main up‑to‑date
 git push origin main        # update your fork’s main
+git chechout your local_branch 
+git rebase origin/main      # rebase/merge with updated forked main branch to your branch.
 
 If you want to rebase your local branch with remote 
 -------------------------------------------------------------------------------
