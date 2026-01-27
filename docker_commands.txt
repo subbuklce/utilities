@@ -6,6 +6,10 @@ example 1:
 python:3.9 = docker image name
 docker run --rm python:3.9 python -c "print 2+2"
 
+Best Link to follow:
+https://phoenixnap.com/kb/docker-commands-cheat-sheet
+
+
 | Command                            | Description                                  |                                                                              |
 | ---------------------------------- | -------------------------------------------- | ---------------------------------------------------------------------------- |
 | `docker run`                       | Runs a command in a new container            |                                                                              |
