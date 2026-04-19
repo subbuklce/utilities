@@ -1,0 +1,25 @@
+Necessary Plugins:
+ Preferable way to use a feature, best to use plugin if available better than mcp, skills.
+ limitation is claude specific only at this time.
+1. /ralph-loop:ralph-loop  - best for repititive task to get best of it
+ex: refine the code optimization, be professional, do not address silly issues. loop it for 10 times.
+2. /feature-dev: feature-dev - Ask this plugin whenever a new feature is required to be implemented. 
+
+
+MCP servers:
+1. jira mcp server: Ensure you re-authenticate everytime before using it.
+2. github mcp server
+
+
+
+skills:
+better than mcp but evolving phase.
+follows a file system architecture - removing a folder means uninstalling a skill
+1. systematic-debugging
+
+
+update your project .CLAUDE.md and home .CLAUDE.md(for common/gloabl behavior)
+
+
+cmds:
+/context, /status, /stats, /model, /help, /compact, /clear, /config, /permissions
